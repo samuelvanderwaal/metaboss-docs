@@ -10,3 +10,4 @@
 - [Sign](./sign.md)
 - [Snapshot](./snapshot.md)
 - [Update](./update.md)
+- [Contact](./contact.md)

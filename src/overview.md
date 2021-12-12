@@ -28,14 +28,6 @@ Suggestions and PRs welcome!
 
 **Note: This is experimental software for a young ecosystem. Use at your own risk. The author is not responsible for misuse of the software or failing to test specific commands before using on production NFTs.**
 
-## Contact
-
-Email: sam@vanderwaal.dev
-
-Twitter: [@samvwaal](https://twitter.com/samvwaal)
-
-Discord: @archaeopteryx#7615
-
 ## Binaries
 
 Linux, MacOS and Windows binaries available in [releases](https://github.com/samuelvanderwaal/metaboss/releases), thanks to CI work done by [Kartik Soneji](https://github.com/KartikSoneji).
