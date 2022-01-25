@@ -41,12 +41,13 @@ Creates a JSON file in the output directory with the name format of `<UPDATE_AUT
 
 ### Snapshot Holders
 
-Snapshot all current holders of NFTs filtered by candy_machine_id or update_authority.
+Snapshot all current holders of NFTs filtered by verified candy_machine_id/first creator or update_authority.
+**Note:** Update authority can be faked so use that option with caution.
 
 #### Usage
 
 ```bash
-metaboss snapshot holders --candy-machine-id <CANDY_MACHINE_ID> --output <OUTPUT_DIR>
+metaboss snapshot holders --candy-machine-id <CANDY_MACHINE_ID/CREATOR> --output <OUTPUT_DIR>
 ```
 
 or
@@ -85,12 +86,12 @@ Example file:
 
 ### Snapshot Mints
 
-Snapshot all mint accounts for a given candy machine id or update authority
+Snapshot all mint accounts for a given verified candy machine id/first creator or update authority
 
 #### Usage
 
 ```bash
-metaboss snapshot mints --candy-machine-id <CANDY_MACHINE_ID> --output <OUTPUT_DIR>
+metaboss snapshot mints --candy-machine-id <CANDY_MACHINE_ID/CREATOR> --output <OUTPUT_DIR>
 ```
 
 or
