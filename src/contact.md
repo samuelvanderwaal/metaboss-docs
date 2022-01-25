@@ -4,6 +4,8 @@ Email: sam@vanderwaal.dev
 
 Twitter: [@samvwaal](https://twitter.com/samvwaal)
 
-Discord: @archaeopteryx#7615
+Discord: 
 
-https://discord.gg/t75ZFq2Tyt
+@archaeopteryx#7615
+
+[Metaboss Server](https://discord.gg/t75ZFq2Tyt)

@@ -3,7 +3,7 @@
 - [Overview](./overview.md)
 - [Quick Start](./quick_start.md)
 - [Examples](./examples.md)
-- [Base Options](./base_options.md)
+- [Global Options](./global_options.md)
 - [Burn](./burn.md)
 - [Decode](./decode.md)
 - [Derive](./derive.md)
