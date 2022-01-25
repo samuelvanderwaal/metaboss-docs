@@ -4,7 +4,7 @@
 
 Set non-Data struct values for a NFT.
 
-#### Set Primary-Sale-Happened
+### Set Primary-Sale-Happened
 
 Set `primary_sale_happened` to be `true`.
 
@@ -14,7 +14,7 @@ metaboss set primary-sale-happened --keypair <PATH_TO_KEYPAIR> --account <MINT_A
 
 Outputs a TxId to the command line so you can check the result.
 
-#### Set Update-Authority
+### Set Update-Authority
 
 Set `update_authority` to a different public key.
 
@@ -22,7 +22,7 @@ Set `update_authority` to a different public key.
 metaboss set update-authority --keypair <PATH_TO_KEYPAIR> --account <MINT_ACCOUNT> --new-update-authority <NEW_UPDATE_AUTHORITY>
 ```
 
-#### Set Update-Authority-All
+### Set Update-Authority-All
 
 Set `update_authority` to a different public key for a list of NFTs.
 

@@ -1,5 +1,10 @@
 # Metaboss
 
+[![Stars](https://img.shields.io/github/stars/samuelvanderwaal/metaboss?style=social)](https://github.com/samuelvanderwaal/metaboss)
+[![Forks](https://img.shields.io/github/forks/samuelvanderwaal/metaboss?style=social)](https://github.com/samuelvanderwaal/metaboss)
+[![Crate](https://img.shields.io/crates/v/metaboss)](https://crates.io/crates/metaboss)
+[![Downloads](https://img.shields.io/crates/d/metaboss)](https://crates.io/crates/metaboss)
+
 The Solana Metaplex NFT 'Swiss Army Knife' tool.
 
 Current supported features:

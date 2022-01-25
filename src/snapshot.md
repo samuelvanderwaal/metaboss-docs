@@ -2,11 +2,11 @@
 
 Get snapshots of various blockchain states.
 
-#### Snapshot CM-Accounts
+### Snapshot CM-Accounts
 
 Snapshot all candy machine config and state accounts for a given update_authority.
 
-##### Usage
+#### Usage
 
 ```bash
 metaboss snapshot cm-accounts --update-authority <UPDATE_AUTHORITY> --output <OUTPUT_DIR>
@@ -39,11 +39,11 @@ Creates a JSON file in the output directory with the name format of `<UPDATE_AUT
 }
 ```
 
-#### Snapshot Holders
+### Snapshot Holders
 
-Snapshot all current holders of NFTs filtered by candy_machine_id or update_authority
+Snapshot all current holders of NFTs filtered by candy_machine_id or update_authority.
 
-##### Usage
+#### Usage
 
 ```bash
 metaboss snapshot holders --candy-machine-id <CANDY_MACHINE_ID> --output <OUTPUT_DIR>
@@ -54,6 +54,14 @@ or
 ```bash
 metaboss snapshot holders --update-authority <UPDATE_AUTHORITY> --output <OUTPUT_DIR>
 ```
+
+**For candy machine v2, you can add the `--v2` option when using it with candy machine id.**
+Candy machine v2 has a separate creator id from the candy machine account id. 
+
+```bash
+metaboss snapshot holders --candy-machine-id <CANDY_MACHINE_ID> --v2 --output <OUTPUT_DIR>
+```
+where <CANDY_MACHINE_ID> is the candy machine id retrieved from the cache file.
 
 Creates a JSON file in the output directory with the name format of `<CANDY_MACHINE_ID/UPDATE_AUTHORITY>_holders.json` consisting of an array of objects with the following fields:
 
@@ -75,11 +83,11 @@ Example file:
 ]
 ```
 
-#### Snapshot Mints
+### Snapshot Mints
 
 Snapshot all mint accounts for a given candy machine id or update authority
 
-##### Usage
+#### Usage
 
 ```bash
 metaboss snapshot mints --candy-machine-id <CANDY_MACHINE_ID> --output <OUTPUT_DIR>
@@ -90,6 +98,14 @@ or
 ```bash
 metaboss snapshot mints --update-authority <UPDATE_AUTHORITY> --output <OUTPUT_DIR>
 ```
+
+**For candy machine v2, you can add the `--v2` option when using it with candy machine id.**
+Candy machine v2 has a separate creator id from the candy machine account id.
+
+```bash
+metaboss snapshot mints --candy-machine-id <CANDY_MACHINE_ID> --v2 --output <OUTPUT_DIR>
+```
+where <CANDY_MACHINE_ID> is the candy machine id retrieved from the cache file.
 
 Creates a JSON file in the output directory with the name format of `<CANDY_MACHINE_ID/UPDATE_AUTHORITY>_mint_accounts.json` consisting of an array of mint accounts.
 

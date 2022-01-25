@@ -4,11 +4,11 @@
 
 Update various aspects of an NFT.
 
-#### Update Data
+### Update Data
 
 Update the `Data` struct on a NFT from a JSON file.
 
-##### Usage
+#### Usage
 
 ```bash
 metaboss update data --keypair <PATH_TO_KEYPAIR> --account <MINT_ACCOUNT> --new-data-file <PATH_TO_NEW_DATA_FILE>
@@ -48,11 +48,11 @@ Note: The on-chain `Data` struct is *different* than the external metadata store
 
 Outputs a TxId to the command line so you can check the result.
 
-#### Update Data All
+### Update Data All
 
 Update the `Data` struct on a list of NFTs from JSON files.
 
-##### Usage
+#### Usage
 
 ```bash
 metaboss update data-all --keypair <PATH_TO_KEYPAIR> --data-dir <PATH_TO_DATA_DIR>
@@ -95,21 +95,21 @@ Note: The on-chain `Data` struct is *different* than the external metadata store
 
 Outputs a TxId to the command line so you can check the result.
 
-#### Update URI
+### Update URI
 
 Update the metadata URI, keeping the rest of the `Data` struct the same.
 
-##### Usage
+#### Usage
 
 ```bash
 metaboss update uri --keypair <PATH_TO_KEYPAIR> --account <MINT_ACCOUNT> --new-uri <NEW_URI>
 ```
 
-#### Update URI All
+### Update URI All
 
 Update the metadata URI for a list of mint accounts, keeping the rest of the `Data` struct the same.
 
-##### Usage
+#### Usage
 
 ```bash
 metaboss update uri-all --keypair <PATH_TO_KEYPAIR> --json-file <PATH_TO_JSON_FILE>

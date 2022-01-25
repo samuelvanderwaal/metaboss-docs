@@ -4,7 +4,7 @@
 
 Decodes a mint account's metadata into a JSON file. It accepts either a single account or a list of accounts.
 
-##### Usage
+#### Usage
 
 ```bash
 metaboss decode mint --account <MINT_ACCOUNT> -o <OUPUT_DIRECTORY>
