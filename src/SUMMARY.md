@@ -12,4 +12,5 @@
 - [Sign](./sign.md)
 - [Snapshot](./snapshot.md)
 - [Update](./update.md)
+- [Withdraw](./withdraw.md)
 - [Contact](./contact.md)

@@ -57,6 +57,12 @@ or
 git clone https://github.com/samuelvanderwaal/metaboss.git
 ```
 
+On Ubuntu you may need some additional packages:
+
+```
+sudo apt install libssl-dev libudev-dev pkg-config
+```
+
 Change directory and check out the `main` branch:
 
 ```bash
