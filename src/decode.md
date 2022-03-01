@@ -25,3 +25,5 @@ The JSON list file should be an array of mint accounts to be decoded:
 The command will write each metadata JSON file to the output directory as a separate file with the mint account as the name: e.g. `CQNKXw1rw2eWwi812Exk4cKUjKuomZ2156STGRyXd2Mp.json`. The output option defaults to the current directory.
 
 As of v0.4.0, the default output will only be the `Data` struct matching the input format of the `update data` and `update data-all` commands. To get the full `Metadata` struct, use the `--full` option.
+
+Use `--raw` to get the account data as raw bytes for debugging purposes.

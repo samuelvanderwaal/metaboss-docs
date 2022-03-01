@@ -47,8 +47,10 @@ Snapshot all current holders of NFTs filtered by verified candy_machine_id/first
 #### Usage
 
 ```bash
-metaboss snapshot holders --candy-machine-id <CANDY_MACHINE_ID/CREATOR> --output <OUTPUT_DIR>
+metaboss snapshot holders --creator <CREATOR_ADDRESS> -p <POSITION> --output <OUTPUT_DIR>
 ```
+
+Use the positon to indicate which creator in the creators array to filter by; defaults to the first one (position 0).
 
 or
 
@@ -60,11 +62,11 @@ metaboss snapshot holders --update-authority <UPDATE_AUTHORITY> --output <OUTPUT
 Candy machine v2 has a separate creator id from the candy machine account id. 
 
 ```bash
-metaboss snapshot holders --candy-machine-id <CANDY_MACHINE_ID> --v2 --output <OUTPUT_DIR>
+metaboss snapshot holders --creator <CANDY_MACHINE_ID> --v2 --output <OUTPUT_DIR>
 ```
 where <CANDY_MACHINE_ID> is the candy machine id retrieved from the cache file.
 
-Creates a JSON file in the output directory with the name format of `<CANDY_MACHINE_ID/UPDATE_AUTHORITY>_holders.json` consisting of an array of objects with the following fields:
+Creates a JSON file in the output directory with the name format of `<CREATOR/UPDATE_AUTHORITY>_holders.json` consisting of an array of objects with the following fields:
 
 -   owner wallet -- the holder of the token
 -   associated token account -- the token account the NFT is stored at
@@ -91,8 +93,10 @@ Snapshot all mint accounts for a given verified candy machine id/first creator o
 #### Usage
 
 ```bash
-metaboss snapshot mints --candy-machine-id <CANDY_MACHINE_ID/CREATOR> --output <OUTPUT_DIR>
+metaboss snapshot mints --creator <CANDY_MACHINE_ID/CREATOR> --output <OUTPUT_DIR>
 ```
+
+Use the positon to indicate which creator in the creators array to filter by; defaults to the first one (position 0).
 
 or
 
@@ -104,7 +108,7 @@ metaboss snapshot mints --update-authority <UPDATE_AUTHORITY> --output <OUTPUT_D
 Candy machine v2 has a separate creator id from the candy machine account id.
 
 ```bash
-metaboss snapshot mints --candy-machine-id <CANDY_MACHINE_ID> --v2 --output <OUTPUT_DIR>
+metaboss snapshot mints --creator <CANDY_MACHINE_ID> --v2 --output <OUTPUT_DIR>
 ```
 where <CANDY_MACHINE_ID> is the candy machine id retrieved from the cache file.
 

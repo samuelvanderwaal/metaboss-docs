@@ -95,6 +95,47 @@ Note: The on-chain `Data` struct is *different* than the external metadata store
 
 Outputs a TxId to the command line so you can check the result.
 
+### Update Name
+
+Update the on-chain name of a NFT, keeping the rest of the `Data` struct the same.
+
+#### Usage
+
+```bash
+ metaboss update name --keypair <PATH_TO_KEYPAIR> --account <MINT_ACCOUNT> --new-name <NEW_NAME>
+ ```
+
+
+### Update Symbol
+
+Update the on-chain symbol of a NFT, keeping the rest of the `Data` struct the same.
+
+#### Usage
+
+```bash
+ metaboss update name --keypair <PATH_TO_KEYPAIR> --account <MINT_ACCOUNT> --new-symbol <NEW_SYMBOL>
+ ```
+
+### Update Creators
+
+Update the creators of a NFT, keeping the rest of the `Data` struct the same.
+
+#### Usage
+
+```bash
+metaboss update creators -k <PATH_TO_KEYPAIR> -a <MINT_ACCOUNT> -c <CREATOR1:SHARE:VERIFIED,CREATOR2:SHARE:VERIFIED>
+```
+
+Creators should be a comma-delimited list of creator:share:verified. E.g. 
+
+Example:
+
+```bash
+metaboss update creators -k ~/.config/solana/devnet.json -a 4rxTT8pKeYFrFgNBgTspBWVEnMnsAZGwChkjRUtP4Xpi -c 42NevAWA6A8m9prDvZRUYReQmhNC3NtSZQNFUppPJDRB:70:false,AVdBTNhDqYgXGaaVkqiaUJ1Yqa61hMiFFaVRtqwzs5GZ:30:false
+```
+
+Using the `--append` flag will set the shares to 0 and append to the existing creators list, otherwise the creators are overwritten with the list you pass in.
+
 ### Update URI
 
 Update the metadata URI, keeping the rest of the `Data` struct the same.

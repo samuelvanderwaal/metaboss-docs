@@ -39,3 +39,19 @@ The mint accounts file should be a JSON file with an array of NFT mint accounts 
     "CK2npuck3WTRNFXSdZv8YjudJJEa69EVGd6GFfeSzfGP"
 ]
 ```
+
+### Set Immutable
+
+Set an NFT's `Data` struct to be immutable. **This is not reversible.**
+
+```bash
+metaboss set immutable --keypair <PATH_TO_KEYPAIR> --account <MINT_ACCOUNT>
+```
+
+### Set Immutable-All
+
+Set all NFTs in a list to be immutable. **This is not reversible.**
+
+```bash
+metaboss set immutable-all --keypair <PATH_TO_KEYPAIR> --mint-accounts-file <PATH_TO_MINT_ACCOUNTS>
+```

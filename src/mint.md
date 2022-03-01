@@ -42,6 +42,8 @@ The --external-metadata-uri option takes a URI to an external metadata file such
 
 If `receiver` is set, the NFT will be minted directly to the receiver's address, otherwise it is minted to `keypair`. Observant users may note that with a simple bash script this allows airdrops to be deployed with Metaboss.
 
+Use the `--sign` option to sign the metadata with the keypair immediately after minting.
+
 ### Mint List
 
 Mint multiple NFTs from a list of JSON files.
@@ -60,3 +62,5 @@ metaboss mint list --keypair <KEYPAIR> --external-metadata-uris <PATH_TO_JSON_FI
 To mint from URIs provide the path to a JSON file containing a list of URIs.
 
 By default, new NFTs are minted as mutable, to make them immutable use the `--immutable` option.
+
+Use the `--sign` option to sign the metadata with the keypair immediately after minting.
