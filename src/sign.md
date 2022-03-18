@@ -18,25 +18,25 @@ Outputs a TxId to the command line so you can check the result.
 
 ### Sign All
 
-Sign all metadata from a JSON list or for a given candy machine id.
+Sign all metadata from a JSON list or for a given first verified creator. First verified creator can be the candy machine creator id or whatever the first verified creator in the creators array is for your NFTs.
 
 #### Usage
 
 ```bash
-metaboss sign all --keypair <PATH_TO_KEYPAIR> --candy-machine-id <CANDY_MACHINE_ID>
+metaboss sign all --keypair <PATH_TO_KEYPAIR> --creator <FIRST_CREATOR>
 ```
 
-**For candy machine v2, you can add the `--v2` option when using it with candy machine id.**
+**For candy machine v2, you can add the `--v2` option when using it with the candy machine id.**
 Candy machine v2 has a separate creator id from the candy machine account id. 
 
 ```bash
-metaboss sign all --keypair <PATH_TO_KEYPAIR> --candy-machine-id <CANDY_MACHINE_ID> --v2
+metaboss sign all --keypair <PATH_TO_KEYPAIR> --creator <CANDY_MACHINE_ID> --v2
 ```
 
 or you can use the candy machine creator id which will be the first creator in the creators array.
 
 ```bash
-metaboss sign all --keypair <PATH_TO_KEYPAIR> --candy-machine-id <FIRST_CREATOR>
+metaboss sign all --keypair <PATH_TO_KEYPAIR> --creator <CANDY_MACHINE_CREATOR_ID>
 ```
 
 With a mint acconts JSON list:

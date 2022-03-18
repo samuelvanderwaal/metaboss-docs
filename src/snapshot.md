@@ -93,7 +93,7 @@ Snapshot all mint accounts for a given verified candy machine id/first creator o
 #### Usage
 
 ```bash
-metaboss snapshot mints --creator <CANDY_MACHINE_ID/CREATOR> --output <OUTPUT_DIR>
+metaboss snapshot mints --creator <FIRST_CREATOR> --output <OUTPUT_DIR>
 ```
 
 Use the positon to indicate which creator in the creators array to filter by; defaults to the first one (position 0).
